@@ -6,7 +6,6 @@ class Solution {
             a[i]=a[j];
             a[j]=temp;
         }
-//        System.out.println("ans:::"+ Arrays.toString(a));
         String ans = "";
         for (char c : a) {
             ans += c;
