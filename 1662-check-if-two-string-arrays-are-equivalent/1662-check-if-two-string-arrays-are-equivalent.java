@@ -9,6 +9,8 @@ class Solution {
             s2.append(s);
         }
         return s1.toString().equals(s2.toString());
+        
+        
 
     }
 }
