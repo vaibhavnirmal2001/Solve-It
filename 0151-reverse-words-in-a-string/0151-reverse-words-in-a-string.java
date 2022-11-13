@@ -17,16 +17,16 @@ class Solution {
         al.add(String.valueOf(temp));
         Collections.reverse(al);
 //        System.out.println(al);
-        String ans="";
+        StringBuilder ans= new StringBuilder();
         for (int i = 0; i < al.size(); i++) {
             if (i==al.size()-1){
-                ans+=al.get(i);
+                ans.append(al.get(i));
                 break;
             }
             if (i<al.size()-1){
-                ans+=al.get(i)+" ";
+                ans.append(al.get(i)).append(" ");
             }
         }
-        return ans;
+        return ans.toString();
     }
 }
