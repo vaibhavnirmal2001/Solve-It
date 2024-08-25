@@ -14,18 +14,18 @@
  * }
  */
 class Solution {
-    public List<Integer> helper(TreeNode root, List<Integer> al){
+    public void helper(TreeNode root, List<Integer> al){
         if(root==null){
-            return al;
+            return;
         }
-        al=helper(root.left, al);
-        al=helper(root.right, al);
+        helper(root.left, al);
+        helper(root.right, al);
         al.add(root.val);
-        return al;
+        
     }
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> al = new ArrayList<>();
-        return helper(root, al);
-        
+        helper(root, al);
+        return al;
     }
 }
