@@ -9,8 +9,11 @@ class Solution {
         // }
 
         
-        return (Math.abs(z-y) < Math.abs(z-x))?2:((Math.abs(z-y) > Math.abs(z-x))?1:0);
-        
+        //return (Math.abs(z-y) < Math.abs(z-x))?2:((Math.abs(z-y) > Math.abs(z-x))?1:0);
+        int dy = Math.abs(z - y);
+        int dx = Math.abs(z - x);
+
+        return (dy < dx) ? 2 : ((dy > dx) ? 1 : 0);
         
     }
 }
