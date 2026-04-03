@@ -5,6 +5,7 @@ class Solution {
         while (i<s.length() && j<t.length()){
             if (s.charAt(i)==t.charAt(j)){
                 i++;
+                if(i==s.length()) return true;
             }
             j++;
         }
